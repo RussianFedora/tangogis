@@ -14,22 +14,23 @@ Source0:        %{name}-%{version}.svn60.tar.xz
 Source1:        %{name}.desktop
 Source100:      README.RFRemix
 
-BuildRequires: bluez-libs-devel
-BuildRequires: dbus-devel
-BuildRequires: gtk2-devel
-BuildRequires: GConf2-devel
-BuildRequires: libcurl-devel
-BuildRequires: libexif-devel
-BuildRequires: libsoup-devel
-BuildRequires: libxml2-devel
-BuildRequires: sqlite-devel
-BuildRequires: gettext
-BuildRequires: desktop-file-utils
+BuildRequires:  bluez-libs-devel
+BuildRequires:  dbus-devel
+BuildRequires:  gtk2-devel
+BuildRequires:  GConf2-devel
+BuildRequires:  libcurl-devel
+BuildRequires:  libexif-devel
+BuildRequires:  libsoup-devel
+BuildRequires:  libxml2-devel
+BuildRequires:  sqlite-devel
+BuildRequires:  gettext
+BuildRequires:  desktop-file-utils
+BuildRequires:  cmake
 
-Requires: dbus
-Requires: gpsd
-Requires: gpscorrelate
-Requires: jhead
+Requires:   dbus
+Requires:   gpsd
+Requires:   gpscorrelate
+Requires:   jhead
 
 %description
 Tangogis is a fork of tangogps for to make better view, addition many various
