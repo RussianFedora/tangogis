@@ -1,5 +1,8 @@
+%global svn     60
+%global realver 1.0.0
+
 Name:           tangogis
-Version:        1.0.0
+Version:        %{realver}.svn%{svn}
 Release:        1%{?dist}.R
 Summary:        GTK+ mapping and GPS application
 Summary(ru):    GTK+ карты, навигация, GPS
@@ -10,7 +13,7 @@ URL:            http://www.tangogps.org/
 BuildRoot:      %{_tmppath}/%{name}-%{version}-%{release}-root-%(%{__id_u} -n)
 
 #Source0:       http://tangogis.googlecode.com/files/%{name}-%{version}.tar.bz2
-Source0:        %{name}-%{version}.svn60.tar.xz
+Source0:        %{name}-%{version}.tar.xz
 Source1:        %{name}.desktop
 Source100:      README.RFRemix
 
@@ -40,7 +43,7 @@ relaible software product for use as car computer on unix-like OS platform
 hardware.
 
 %prep
-%setup -q -n %{name}-%{version}.svn60
+%setup -q
 
 
 %build
