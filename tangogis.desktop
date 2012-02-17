@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=GPS and Maps
+Comment=Display map and GPS position
+Version=1.0
+Type=Application
+Exec=tangogis
+Icon=tangogis
+Terminal=false
+Categories=Network;
+StartupNotify=true
