@@ -48,6 +48,7 @@ mkdir build
 cd build
 %{cmake} ..
 make %{?_smp_mflags}
+cd ..
 cp %{SOURCE100} .
 
 %install
